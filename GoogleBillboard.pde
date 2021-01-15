@@ -2,10 +2,10 @@ public final static String e = "2.7182818284590452353602874713526624977572470936
 public void setup()  
 {   
     // Google Billboard part 1 function that shows first 10 numbers in e that are prime
-    primenums();
+    primeNums();
     /* Google Billboard part 2 function that shows 5 ten-digit numbers in e 
     where individual digits add up to 49 ex. 7+1+8+2+8+1+8+2+8+4 = 49*/
-    //fortynine();
+    //fortyNine();
 }  
 public void draw()  
 {   
@@ -40,7 +40,7 @@ public boolean isFortyNine(String item)
   return false;
 }
 // function that outputs first ten-digit prime nums
-public void primenums(){
+public void primeNums(){
   for (int i = 2; i <= e.length() - 10; i++){
         String digits = e.substring(i, i + 10);
         double dNum = Double.parseDouble(digits);
@@ -51,7 +51,7 @@ public void primenums(){
   }
 }
 // function that outputs ten-digit 49 sum 
-public void fortynine(){
+public void fortyNine(){
   for (int i = 2; i <= e.length() - 10; i++){
         String digits = e.substring(i, i + 10);
         double dNum = Double.parseDouble(digits);
